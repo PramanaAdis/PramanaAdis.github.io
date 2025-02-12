@@ -456,3 +456,32 @@
 .blog-item a:hover i::after {
     width: 50px;
 }
+.table th, .table td {
+    padding: 12px 15px;
+}
+
+/* Menambahkan warna latar belakang pada header tabel */
+.table thead {
+    background-color: #3ec03a;
+    color: #fff;
+}
+
+/* Hover efek untuk baris tabel */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Memberikan warna latar belakang khusus pada baris pertama */
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Memberikan border yang lebih halus pada tabel */
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+/* Membuat tabel lebih responsif */
+.table-responsive {
+    margin-top: 30px;
+}
