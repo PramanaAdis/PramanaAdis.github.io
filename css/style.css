@@ -485,3 +485,41 @@
 .table-responsive {
     margin-top: 30px;
 }
+.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  /* Pastikan gambar dalam modal mengisi layar */
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .modal-content {
+    height: 100%;
+  }
+
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative; /* Agar tombol bisa diposisikan secara absolute */
+  }
+
+  .modal-body img {
+    max-width: 100%;
+    max-height: 100vh; /* Maksimum tinggi 100% dari viewport */
+    object-fit: contain; /* Agar gambar tidak terdistorsi */
+  }
+
+  /* Posisi tombol kembali di pojok kiri gambar */
+  .btn-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1050; /* Agar tombol tetap berada di atas gambar */
+  }

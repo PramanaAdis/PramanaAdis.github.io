@@ -143,7 +143,7 @@
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/herodepan.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/Heropasar.JPG" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -180,7 +180,73 @@
     </div>
     <!-- About End -->
     
-
+    <div class="container my-4">
+        <h2 class="text-center mb-4">Galeri Foto</h2>
+        <div class="row gallery">
+          <!-- Foto 1 -->
+          <div class="col-md-4 mb-4">
+            <a href="#" data-toggle="modal" data-target="#modalFoto" data-src="img/pakaian.jpg">
+              <img src="img/pakaian.jpg" class="img-thumbnail" alt="Foto 1">
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="#" data-toggle="modal" data-target="#modalFoto" data-src="img/kelontong.jpg">
+              <img src="img/kelontong.jpg" class="img-thumbnail" alt="Foto 1">
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="#" data-toggle="modal" data-target="#modalFoto" data-src="img/warungmakan.jpg">
+              <img src="img/warungmakan.jpg" class="img-thumbnail" alt="Foto 1">
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="#" data-toggle="modal" data-target="#modalFoto" data-src="img/parkirmobil.jpg">
+              <img src="img/parkirmobil.jpg" class="img-thumbnail" alt="Foto 1">
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="#" data-toggle="modal" data-target="#modalFoto" data-src="img/sayur.jpg">
+              <img src="img/sayur.jpg" class="img-thumbnail" alt="Foto 1">
+            </a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <a href="#" data-toggle="modal" data-target="#modalFoto" data-src="img/masjid.jpg">
+              <img src="img/masjid.jpg" class="img-thumbnail" alt="Foto 1">
+            </a>
+          </div>
+    
+          
+         
+        </div>
+      </div>
+    
+      <!-- Modal untuk menampilkan gambar besar -->
+      <div class="modal fade" id="modalFoto" tabindex="-1" role="dialog" aria-labelledby="modalFotoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="" id="modalImage" class="img-fluid" alt="Gambar Penuh">
+              <button type="button" class="btn btn-primary btn-back" data-dismiss="modal">Kembali</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Link ke Bootstrap JS dan Popper.js -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+      <script>
+        // Mengubah gambar di modal untuk tampil besar
+        $('#modalFoto').on('show.bs.modal', function (event) {
+          var button = $(event.relatedTarget); // Tombol yang diklik
+          var imageSrc = button.data('src'); // Mendapatkan src gambar
+          var modal = $(this);
+          modal.find('#modalImage').attr('src', imageSrc); // Menampilkan gambar besar di modal
+        });
+      </script>
+    
 
    
 
